@@ -222,6 +222,9 @@ type CreateOpts struct {
 	// Max specifies Maximum number of servers to launch.
 	Max int `json:"max_count,omitempty"`
 
+	// KeyName Key pair name.
+	KeyName string `json:"key_name,omitempty"`
+
 	// Tags allows a server to be tagged with single-word metadata.
 	// Requires microversion 2.52 or later.
 	Tags []string `json:"tags,omitempty"`
